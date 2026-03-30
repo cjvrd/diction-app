@@ -1,0 +1,76 @@
+# docker compose up -d gateway whisper-small
+#
+# Gateway endpoints:
+#   POST /v1/audio/transcriptions   - transcribe audio
+#   WS   /v1/audio/stream           - stream audio in real time
+#   GET  /v1/models                 - list available models
+#   GET  /health                    - health check
+
+services:
+  gateway:
+    build: ./gateway
+    container_name: diction-gateway
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      DEFAULT_MODEL: large
+    depends_on:
+      - whisper-large
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  whisper-small:
+    image: fedirz/faster-whisper-server:latest-cpu
+    container_name: diction-whisper-small
+    restart: unless-stopped
+    volumes:
+      - whisper-models:/root/.cache/huggingface
+    environment:
+      WHISPER__MODEL: Systran/faster-whisper-small
+      WHISPER__INFERENCE_DEVICE: cpu
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 120s
+
+  whisper-medium:
+    image: fedirz/faster-whisper-server:latest-cpu
+    container_name: diction-whisper-medium
+    restart: unless-stopped
+    volumes:
+      - whisper-models:/root/.cache/huggingface
+    environment:
+      WHISPER__MODEL: Systran/faster-whisper-medium
+      WHISPER__INFERENCE_DEVICE: cpu
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 120s
+
+  whisper-large:
+    image: fedirz/faster-whisper-server:latest-cpu
+    container_name: diction-whisper-large
+    restart: unless-stopped
+    volumes:
+      - whisper-models:/root/.cache/huggingface
+    environment:
+      WHISPER__MODEL: Systran/faster-whisper-large-v3
+      WHISPER__INFERENCE_DEVICE: cpu
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 120s
+
+volumes:
+  whisper-models:
+    name: diction-whisper-models

@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		77320E902F78E139009F8165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77320E792F78E138009F8165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77320E802F78E138009F8165;
+			remoteInfo = "diction-macos-app";
+		};
+		77320E9A2F78E139009F8165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77320E792F78E138009F8165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77320E802F78E138009F8165;
+			remoteInfo = "diction-macos-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77320E812F78E138009F8165 /* diction-macos-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diction-macos-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77320E8F2F78E139009F8165 /* diction-macos-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "diction-macos-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77320E992F78E139009F8165 /* diction-macos-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "diction-macos-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		77320E832F78E138009F8165 /* diction-macos-app */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "diction-macos-app";
+			sourceTree = "<group>";
+		};
+		77320E922F78E139009F8165 /* diction-macos-appTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "diction-macos-appTests";
+			sourceTree = "<group>";
+		};
+		77320E9C2F78E139009F8165 /* diction-macos-appUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "diction-macos-appUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77320E7E2F78E138009F8165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77320E8C2F78E139009F8165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77320E962F78E139009F8165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77320E782F78E138009F8165 = {
+			isa = PBXGroup;
+			children = (
+				77320E832F78E138009F8165 /* diction-macos-app */,
+				77320E922F78E139009F8165 /* diction-macos-appTests */,
+				77320E9C2F78E139009F8165 /* diction-macos-appUITests */,
+				77320E822F78E138009F8165 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77320E822F78E138009F8165 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77320E812F78E138009F8165 /* diction-macos-app.app */,
+				77320E8F2F78E139009F8165 /* diction-macos-appTests.xctest */,
+				77320E992F78E139009F8165 /* diction-macos-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77320E802F78E138009F8165 /* diction-macos-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77320EA32F78E139009F8165 /* Build configuration list for PBXNativeTarget "diction-macos-app" */;
+			buildPhases = (
+				77320E7D2F78E138009F8165 /* Sources */,
+				77320E7E2F78E138009F8165 /* Frameworks */,
+				77320E7F2F78E138009F8165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				77320E832F78E138009F8165 /* diction-macos-app */,
+			);
+			name = "diction-macos-app";
+			packageProductDependencies = (
+			);
+			productName = "diction-macos-app";
+			productReference = 77320E812F78E138009F8165 /* diction-macos-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77320E8E2F78E139009F8165 /* diction-macos-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77320EA62F78E139009F8165 /* Build configuration list for PBXNativeTarget "diction-macos-appTests" */;
+			buildPhases = (
+				77320E8B2F78E139009F8165 /* Sources */,
+				77320E8C2F78E139009F8165 /* Frameworks */,
+				77320E8D2F78E139009F8165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77320E912F78E139009F8165 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				77320E922F78E139009F8165 /* diction-macos-appTests */,
+			);
+			name = "diction-macos-appTests";
+			packageProductDependencies = (
+			);
+			productName = "diction-macos-appTests";
+			productReference = 77320E8F2F78E139009F8165 /* diction-macos-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77320E982F78E139009F8165 /* diction-macos-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77320EA92F78E139009F8165 /* Build configuration list for PBXNativeTarget "diction-macos-appUITests" */;
+			buildPhases = (
+				77320E952F78E139009F8165 /* Sources */,
+				77320E962F78E139009F8165 /* Frameworks */,
+				77320E972F78E139009F8165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77320E9B2F78E139009F8165 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				77320E9C2F78E139009F8165 /* diction-macos-appUITests */,
+			);
+			name = "diction-macos-appUITests";
+			packageProductDependencies = (
+			);
+			productName = "diction-macos-appUITests";
+			productReference = 77320E992F78E139009F8165 /* diction-macos-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77320E792F78E138009F8165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					77320E802F78E138009F8165 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					77320E8E2F78E139009F8165 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 77320E802F78E138009F8165;
+					};
+					77320E982F78E139009F8165 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 77320E802F78E138009F8165;
+					};
+				};
+			};
+			buildConfigurationList = 77320E7C2F78E138009F8165 /* Build configuration list for PBXProject "diction-macos-app" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77320E782F78E138009F8165;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 77320E822F78E138009F8165 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77320E802F78E138009F8165 /* diction-macos-app */,
+				77320E8E2F78E139009F8165 /* diction-macos-appTests */,
+				77320E982F78E139009F8165 /* diction-macos-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77320E7F2F78E138009F8165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77320E8D2F78E139009F8165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77320E972F78E139009F8165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77320E7D2F78E138009F8165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77320E8B2F78E139009F8165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77320E952F78E139009F8165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77320E912F78E139009F8165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77320E802F78E138009F8165 /* diction-macos-app */;
+			targetProxy = 77320E902F78E139009F8165 /* PBXContainerItemProxy */;
+		};
+		77320E9B2F78E139009F8165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77320E802F78E138009F8165 /* diction-macos-app */;
+			targetProxy = 77320E9A2F78E139009F8165 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		77320EA12F78E139009F8165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77320EA22F78E139009F8165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		77320EA42F78E139009F8165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "diction-macos-app/diction_macos_app.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Diction uses the microphone to transcribe your speech.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cjvrd.diction-macos-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		77320EA52F78E139009F8165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "diction-macos-app/diction_macos_app.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Diction uses the microphone to transcribe your speech.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cjvrd.diction-macos-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		77320EA72F78E139009F8165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cjvrd.diction-macos-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diction-macos-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/diction-macos-app";
+			};
+			name = Debug;
+		};
+		77320EA82F78E139009F8165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cjvrd.diction-macos-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diction-macos-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/diction-macos-app";
+			};
+			name = Release;
+		};
+		77320EAA2F78E139009F8165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cjvrd.diction-macos-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "diction-macos-app";
+			};
+			name = Debug;
+		};
+		77320EAB2F78E139009F8165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cjvrd.diction-macos-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "diction-macos-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77320E7C2F78E138009F8165 /* Build configuration list for PBXProject "diction-macos-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77320EA12F78E139009F8165 /* Debug */,
+				77320EA22F78E139009F8165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77320EA32F78E139009F8165 /* Build configuration list for PBXNativeTarget "diction-macos-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77320EA42F78E139009F8165 /* Debug */,
+				77320EA52F78E139009F8165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77320EA62F78E139009F8165 /* Build configuration list for PBXNativeTarget "diction-macos-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77320EA72F78E139009F8165 /* Debug */,
+				77320EA82F78E139009F8165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77320EA92F78E139009F8165 /* Build configuration list for PBXNativeTarget "diction-macos-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77320EAA2F78E139009F8165 /* Debug */,
+				77320EAB2F78E139009F8165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77320E792F78E138009F8165 /* Project object */;
+}
