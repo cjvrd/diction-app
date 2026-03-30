@@ -1,4 +1,4 @@
-# docker compose up -d gateway whisper-small
+# docker compose up -d gateway whisper-large
 #
 # Gateway endpoints:
 #   POST /v1/audio/transcriptions   - transcribe audio
@@ -14,7 +14,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      DEFAULT_MODEL: large
+      DEFAULT_MODEL: distil-large-v3
     depends_on:
       - whisper-large
     healthcheck:
@@ -62,7 +62,7 @@ services:
     volumes:
       - whisper-models:/root/.cache/huggingface
     environment:
-      WHISPER__MODEL: Systran/faster-whisper-large-v3
+      WHISPER__MODEL: Systran/faster-distil-whisper-large-v3
       WHISPER__INFERENCE_DEVICE: cpu
     healthcheck:
       test: ["CMD", "wget", "--spider", "-q", "http://localhost:8000/health"]
