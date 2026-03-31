@@ -1,5 +1,6 @@
 import Foundation
 import Observation
+import AppKit
 
 enum DictationState {
     case idle
@@ -16,6 +17,20 @@ class ContentViewModel {
 
     private let audio = AudioCaptureManager()
     private let service = TranscriptionService()
+    private var hotKeyObserver: Any?
+
+    init() {
+        registerGlobalHotKey()
+        hotKeyObserver = NotificationCenter.default.addObserver(
+            forName: .hotKeyPressed,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            Task { @MainActor [weak self] in
+                await self?.toggleRecording()
+            }
+        }
+    }
 
     func toggleRecording() async {
         switch state {
@@ -51,6 +66,7 @@ class ContentViewModel {
         do {
             let text = try await service.done()
             state = .result(text)
+            KeyboardInjector.inject(text)
         } catch {
             state = .error(error.localizedDescription)
         }

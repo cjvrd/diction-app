@@ -17,8 +17,8 @@ struct ContentView: View {
             recordButton
             Spacer()
         }
-        .padding(32)
-        .frame(minWidth: 420, minHeight: 320)
+        .padding(24)
+        .frame(width: 320)
         .overlay(alignment: .bottom) {
             resultView
                 .padding([.horizontal, .bottom], 32)
@@ -27,7 +27,7 @@ struct ContentView: View {
 
     private var statusText: String {
         switch viewModel.state {
-        case .idle:         return "Tap to record"
+        case .idle:         return "Press ⌃⌥⇧⌘U to record"
         case .recording:    return "Recording…"
         case .transcribing: return "Transcribing…"
         case .result:       return "Done"

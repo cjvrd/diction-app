@@ -1,4 +1,4 @@
-# docker compose up -d gateway whisper-large
+# docker compose up -d gateway "service-name"
 #
 # Gateway endpoints:
 #   POST /v1/audio/transcriptions   - transcribe audio
@@ -14,9 +14,9 @@ services:
     ports:
       - "8080:8080"
     environment:
-      DEFAULT_MODEL: distil-large-v3
+      DEFAULT_MODEL: large-v3-turbo
     depends_on:
-      - whisper-large
+      - whisper-large-turbo
     healthcheck:
       test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080/health"]
       interval: 30s
@@ -55,14 +55,30 @@ services:
       retries: 3
       start_period: 120s
 
-  whisper-large:
+  whisper-large-turbo:
     image: fedirz/faster-whisper-server:latest-cpu
-    container_name: diction-whisper-large
+    container_name: diction-whisper-large-turbo
     restart: unless-stopped
     volumes:
       - whisper-models:/root/.cache/huggingface
     environment:
-      WHISPER__MODEL: Systran/faster-distil-whisper-large-v3
+      WHISPER__MODEL: deepdml/faster-whisper-large-v3-turbo-ct2
+      WHISPER__INFERENCE_DEVICE: cpu
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 120s
+
+  whisper-distil-large-v3:
+    image: fedirz/faster-whisper-server:latest-cpu
+    container_name: diction-whisper-distil-large-v3
+    restart: unless-stopped
+    volumes:
+      - whisper-models:/root/.cache/huggingface
+    environment:
+      WHISPER__MODEL: Systran/faster-whisper-distil-large-v3
       WHISPER__INFERENCE_DEVICE: cpu
     healthcheck:
       test: ["CMD", "wget", "--spider", "-q", "http://localhost:8000/health"]
